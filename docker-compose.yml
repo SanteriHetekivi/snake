@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  snake:
+    build: .
+    volumes:
+      - ./src:/app
+    env_file:
+      - ./.env
+    ports:
+      - 5920:5920
